@@ -1,11 +1,12 @@
 #include<stdio.h> 
 int main()            
 {
-int fahr,celcius;
+int fahr;
+float celcius;
 printf("enter temprature in fahr \n");
 scanf("%d",&fahr);
 celcius= 5.0/9*(fahr-32) ;
-printf("temprature in celcius is = %d \n",celcius);
+printf("temprature in celcius is = %f \n",celcius);
 return 0;
 
 
