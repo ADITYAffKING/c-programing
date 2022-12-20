@@ -12,8 +12,8 @@ int main(){
 }
 int length(char str[100]){
         int i;
-        for(i=1;str[i]!='\0';i++){
+        for(i=1;str[i+1]!='\0';i++){
           
         }
-        return (i-1);
+        return i;
 }
