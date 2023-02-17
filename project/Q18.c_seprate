@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    char str[100];
+    int alpha=0,spChar=0,num=0;
+    printf("enter a string : ");
+    fgets(str,100,stdin);
+    for(int i=0;str[i+1]!='\0';i++){
+        if(str[i]>64&&str[i]<=90||str[i]>=97&&str[i]<=122){
+            alpha++;
+        }
+        else if(str[i]>=48&&str[i]<=57){
+            num++;
+        }
+        else if(str[i]==32){
+            continue;
+        }
+        else{
+            spChar++;
+        }
+    }
+    printf("total number of character are : %d\n",alpha);
+    printf("total number of numbers are : %d\n",num);
+    printf("total number of special character are : %d\n",spChar);
+
+}
